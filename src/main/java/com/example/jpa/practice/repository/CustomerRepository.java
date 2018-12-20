@@ -7,7 +7,6 @@ import com.example.jpa.practice.entity.Customer;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long>{
-	
-	
-
+	public Customer findByName(String name);
+	public Customer findByPhone(String phone);
 }
